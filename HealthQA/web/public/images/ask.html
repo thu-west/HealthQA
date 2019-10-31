@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)http://localhost:3000/ask -->
+<html ng-app="qaweb" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style><title></title><link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"><link rel="stylesheet" href="http://localhost:3000/stylesheets/style.css"><link rel="stylesheet" href="http://localhost:3000/stylesheets/jquery-ui.min.css"><script src="./ask_files/jquery-1.11.2.min.js"></script><script src="./ask_files/jquery-ui.min.js"></script><script src="./ask_files/angular.min.js"></script><script src="./ask_files/my.js"></script></head><body><h1>Command failed: C:\Windows\system32\cmd.exe /s /c "java -jar ../ask.jar "72e6b161-d3d4-4d4a-897c-1ab03f9cc204" 糖尿病吃什么""
+Exception in thread "main" java.lang.UnsatisfiedLinkError: Unable to load library 'lib/ICTCLAS2015/lib/win64/NLPIR': Native library (win32-x86-64/lib/ICTCLAS2015/lib/win64/NLPIR.dll) not found in resource path ([file:/D:/Project/healthqa/ask.jar])
+	at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:271)
+	at com.sun.jna.NativeLibrary.getInstance(NativeLibrary.java:398)
+	at com.sun.jna.Library$Handler.&lt;init&gt;(Library.java:147)
+	at com.sun.jna.Native.loadLibrary(Native.java:412)
+	at com.sun.jna.Native.loadLibrary(Native.java:391)
+	at platform.nlp.nlpir.CLibrary.&lt;clinit&gt;(CLibrary.java:9)
+	at platform.nlp.nlpir.NLPIRSegmenter.open(NLPIRSegmenter.java:27)
+	at platform.nlp.nlpir.NLPIRSegmenter.&lt;clinit&gt;(NLPIRSegmenter.java:22)
+	at platform.Platform.&lt;clinit&gt;(Platform.java:30)
+	at platform.ao.Question.&lt;init&gt;(Question.java:37)
+	at application.Ask.ask(Ask.java:72)
+	at application.Ask.main(Ask.java:238)
+</h1><h2></h2><pre>Error: Command failed: C:\Windows\system32\cmd.exe /s /c "java -jar ../ask.jar "72e6b161-d3d4-4d4a-897c-1ab03f9cc204" 糖尿病吃什么""
+Exception in thread "main" java.lang.UnsatisfiedLinkError: Unable to load library 'lib/ICTCLAS2015/lib/win64/NLPIR': Native library (win32-x86-64/lib/ICTCLAS2015/lib/win64/NLPIR.dll) not found in resource path ([file:/D:/Project/healthqa/ask.jar])
+	at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:271)
+	at com.sun.jna.NativeLibrary.getInstance(NativeLibrary.java:398)
+	at com.sun.jna.Library$Handler.&lt;init&gt;(Library.java:147)
+	at com.sun.jna.Native.loadLibrary(Native.java:412)
+	at com.sun.jna.Native.loadLibrary(Native.java:391)
+	at platform.nlp.nlpir.CLibrary.&lt;clinit&gt;(CLibrary.java:9)
+	at platform.nlp.nlpir.NLPIRSegmenter.open(NLPIRSegmenter.java:27)
+	at platform.nlp.nlpir.NLPIRSegmenter.&lt;clinit&gt;(NLPIRSegmenter.java:22)
+	at platform.Platform.&lt;clinit&gt;(Platform.java:30)
+	at platform.ao.Question.&lt;init&gt;(Question.java:37)
+	at application.Ask.ask(Ask.java:72)
+	at application.Ask.main(Ask.java:238)
+
+    at ChildProcess.exithandler (child_process.js:751:12)
+    at ChildProcess.emit (events.js:110:17)
+    at maybeClose (child_process.js:1015:16)
+    at Socket.&lt;anonymous&gt; (child_process.js:1183:11)
+    at Socket.emit (events.js:107:17)
+    at Pipe.close (net.js:485:12)</pre></body></html>

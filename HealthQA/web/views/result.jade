@@ -1,0 +1,80 @@
+extends layout
+
+block content
+	script.
+		var result={};
+		$(document).ready(function(){
+			result =!{JSON.stringify(result)};
+			console.log(result);
+			$("#DisAnswer").hide();
+
+			//- $( "#DisAnswer" ).dialog({
+			//- 	autoOpen: false,
+			//- 	show: "blind",
+			//- 	hide: "explode"
+			//- });
+			//- alert(JSON.stringify(result));
+		});
+
+
+	div(ng-controller="ResultCtrl")
+		div.qarhead
+			image.qarlogo(src="/images/logo.jpg")
+				div.qarright
+				form(action="/ask", method="get", style="display: inline")
+					textarea(name="question") #{question}
+					button(type="submit")
+						i.fa.fa-paper-plane
+		//- div.qrbody
+		//- 	label(style="font-weight:bold") 您的问题是：
+		//- 	each word in result.input
+		//- 		if word.w < 0.1
+		//- 			= word.c
+		//- 		else
+		//- 			label(style="margin:2px 8px 2px 8px; color:rgb(0, 0, #{255*word.w})")= word.c
+		div.qrformated        
+		if err == 0
+			div.qrresult#Result
+				each sent, i in result.sranklist
+					div.qritem
+						div(ng-click="showAnswer('#{sent.aid}', #{i})")
+							each word in sent.content
+								if word.w < 0.1
+									= word.c
+								else
+									label(style="margin-right: 2px;color:rgb(0, 0, #{255*word.w})")= word.c	
+			div#DisAnswer
+				div.Q
+					label(style="color:black;font-weight:bold") 问题：
+					font(ng-repeat="word in display_answer.question", ng-style="{'margin':'2px 5px 2px 0px', 'color':'rgb(0,0,'+(255*word.w)+')'}") {{word.c}}
+				div.A
+					label(style="color:black;font-weight:bold") 答案：
+					label(ng-repeat="word in display_answer.content") {{word.c}}
+					<a href="" ng-click="hideAnswer()" style="float: right;">隐藏</a>
+				//- each sent, i in result.sranklist
+					//- div.qritem
+					//- 	div(ng-click="showAnswer('#{sent.aid}', #{i})")
+					//- 		each word in sent.content
+					//- 			if word.w < 0.1
+					//- 				= word.c
+					//- 			else
+					//- 				label(style="margin-right: 2px;color:rgb(0, 0, #{255*word.w})")= word.c	
+									//- label(ng-repeat="word in display_answer.content") {{word.c}}
+			//- div#DisAnswer
+			//- 	div.A
+			//- 		label(style="color:black;font-weight:bold") 答案：
+			//- 		label(ng-repeat="word in display_answer.content") {{word.c}}
+			//- 		<a href="" ng-click="hideAnswer()" style="float: right;">隐藏</a>
+
+			
+
+		else if err == -11
+			div.qrresult 没有找到相似的问题！
+		else if err == -12
+			div.qrresult 没有找到适合的答案！
+		else if err == -13
+			div.qrresult 没有找到适合的答案！
+		else if err == -2
+			div.qrresult 服务器内部错误，请稍后重试！
+		else if err == -1
+			div.qrresult 未知错误，请稍后重试！

@@ -1,0 +1,82 @@
+extends layout
+
+block content
+	script.
+		var result={};
+		$(document).ready(function(){
+			result =!{JSON.stringify(result)};
+			console.log(result);
+			$("#DisAnswer").hide();
+
+		});
+
+
+	div(ng-controller="ResultCtrl")
+		div.qarhead
+			div.qarleft
+				image.qarlogo(src="/images/logo.jpg")
+			
+			div.qarright
+				ul#top_b_ul
+					li#one1
+						a(href='#')仅答案 
+					li#one2
+						a(href='#')仅片段
+					li#one3
+						a(href='#')片段组合 	
+
+					div#con_one_1
+						form(action="/ask_a" method="get")
+							textarea.qainput(name="question") #{question}
+							button.qasearch(type="submit")
+								i.fa.fa-paper-plane
+							
+					div#con_one_2
+						form(action="/ask_p" method="get")
+							textarea.qainput(name="question") #{question}
+							button.qasearch(type="submit")
+								i.fa.fa-paper-plane
+
+					div#con_one_3
+						form(action="/ask_pz" method="get")
+							
+							textarea.qainput(name="question") #{question}
+							button.qasearch(type="submit")
+								i.fa.fa-paper-plane		
+		div.qrformated        
+		if err == 0
+			div.qrresult#Result
+				div.qritem
+					each sent, i in result.sranklist
+						p(style="display:inline;",ng-click="showAnswer('#{sent.aid}', #{i})")
+							each word in sent.content
+								if word.w < 4
+									= word.c
+								else
+									label(style="margin-right: 2px;color:rgb(0, 0, #{255*word.w})")= word.c	
+							label(style="color:red;font-weight:bold") &
+				include footer
+
+			div#DisAnswer
+				div.Q
+					label(style="color:black;font-weight:bold") 问题：
+					font(ng-repeat="word in display_answer.question", ng-style="{'margin':'2px 5px 2px 0px', 'color':'rgb(0,0,'+(255*word.w)+')'}") {{word.c}}
+				div.A
+					label(style="color:black;font-weight:bold") 答案：
+					label(ng-repeat="word in display_answer.content") {{word.c}}
+					<a href="" ng-click="hideAnswer()" style="float: right;">隐藏</a>
+	
+			
+
+		else if err == -11
+			div.qrresult 没有找到相似的问题！
+		else if err == -12
+			div.qrresult 没有找到适合的答案！
+		else if err == -13
+			div.qrresult 没有找到适合的答案！
+		else if err == -2
+			div.qrresult 服务器内部错误，请稍后重试！
+		else if err == -1
+			div.qrresult 未知错误，请稍后重试！
+			
+	

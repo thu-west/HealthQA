@@ -1,0 +1,34 @@
+{
+	"qlist":
+		{
+			"qid_1": [{"c": "Who", "w":"weight"}, {"c": "are", "w":"weight"}, {"c": "you", "w":"weight"}],
+			"qid_2": [{"c": "Can", "w":"weight"}, {"c": "you", "w":"weight"}]
+		},
+	"qrank":
+		["qid_1", "qid_2"],
+	"alist":
+		{
+			"aid_1": 
+				{
+					"qid": "qid_1",
+					"content": [{"c": "I", "w":"weight"}, {"c": "am", "w":"weight"}, {"c": "Fire", "w":"weight"}]
+				},
+			"aid_2":
+				{
+					"qid": "qid_2",
+					"content": [{"c": "Yes", "w":"weight"}, {"c": "I", "w":"weight"}, {"c": "can", "w":"weight"}]
+				}
+		},
+	"arank":
+		["aid_2", "aid_1"],
+	"sranklist":
+		[
+			{
+				"aid": "aid_1", "qid": "qid_1", "content": [{"c": "Yes", "w":"weight"}, {"c": "I", "w":"weight"}, {"c": "can", "w":"weight"}]
+			},
+			{
+				"aid": "aid_1", "qid": "qid_1", "content": [{"c": "You", "w":"weight"}, {"c": "also", "w":"weight"}, {"c": "can", "w":"weight"}]
+			}
+		]
+}
+

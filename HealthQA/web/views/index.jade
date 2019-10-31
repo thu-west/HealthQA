@@ -1,0 +1,74 @@
+extends layout	
+
+block content
+	h1.qatitle 健康问答系统
+	div.qalocation
+		div.search_ul
+		div.qamain
+			ul#top_b_ul
+				li#one1
+					a(href='#' class="topactive")仅答案 
+				li#one2
+					a(href='#')仅片段
+				li#one3
+					a(href='#')片段组合 
+
+			div#con_one_1
+				form(action="/ask_a" method="get")
+					textarea.qainput(name="question") #{question}
+					button.qasearch(type="submit")
+						i.fa.fa-paper-plane
+					
+			div#con_one_2
+				form(action="/ask_p" method="get")
+					textarea.qainput(name="question") #{question}
+					button.qasearch(type="submit")
+						i.fa.fa-paper-plane
+
+			div#con_one_3
+				form(action="/ask_pz" method="get")
+					textarea.qainput(name="question") #{question}
+					button.qasearch(type="submit")
+						i.fa.fa-paper-plane
+
+			
+			div.question
+				//- div.question 
+				ul 
+					li 常见问题:
+					li
+						em 01
+						a(href='ask_a?question=糖尿病的病因') 糖尿病的病因
+					li
+						em 02
+						a(href='ask_a?question=糖尿病的诊断标准是什么') 糖尿病的诊断标准是什么
+					li
+						em 03
+						a(href='ask_p?question=糖尿病患者有哪些症状') 糖尿病患者有哪些症状
+					li
+						em 04
+						a(href='ask_a?question=糖尿病的并发症有哪些') 糖尿病的并发症有哪些
+					li
+						em 05
+						a(href='ask_a?question=糖尿病有哪些危害') 糖尿病有哪些危害
+					li
+						em 06
+						a(href='ask_a?question=糖尿病需要做哪些检查') 糖尿病需要做哪些检查
+					li
+						em 07
+						a(href='ask_a?question=糖尿病的饮食疗法') 糖尿病的饮食疗法
+					li
+						em 08
+						a(href='ask_a?question=糖尿病的药物治疗') 糖尿病的药物治疗
+					li
+						em 09
+						a(href='ask_a?question=糖尿病的运动疗法') 糖尿病的运动疗法
+					li
+						em 10
+						a(href='ask_a?question=糖尿病患者为什么会出现低血糖') 糖尿病患者为什么会出现低血糖
+			include footer
+
+
+
+ 
+
