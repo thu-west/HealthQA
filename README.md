@@ -14,6 +14,6 @@
   conf/healthqa.properties进行数据库配置
 - 5.程序运行入口src.application.qav2.Ask.java
 - 6.在项目目录/HealthQA/web目录下输入命令 npm start
-- 7.在浏览器访问http://localhost：3000即可显示健康问答系统
+- 7.在浏览器访问http://localhost:3000即可显示健康问答系统
 
 
