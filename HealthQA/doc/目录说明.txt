@@ -1,0 +1,20 @@
+/bin
+	存储生成的class文件
+
+/doc
+	存储相关文档
+
+/index
+	存储Lucene索引文件
+
+/lib
+	存储第三方Java库
+
+/resource
+	存储程序资源文件
+
+/src
+	存储源代码
+
+/other
+	存储其他杂物
