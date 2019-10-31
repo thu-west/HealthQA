@@ -1,0 +1,9 @@
+疾病：d(cd) dr(cdr) dw(cdw)
+检指：i iz(ciz) iq
+科室：k
+药物：m(cm) mw
+饮食：y(cy) yw
+治疗：t(ct) tq
+？？：cq
+反问：fw
+废话：ab
