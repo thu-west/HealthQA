@@ -28,7 +28,7 @@ router.get("/ask_a", function(req, res, next) {
 	console.log(req.query.question);
 	console.log("Processing...");
 	var tmp_file = '../tmp/'+id+'.asw';
-	var child = exec('java -jar ask_zyf.jar "'+id+'" "'+req.query.question+'" "'+type+'"', 
+	var child = exec('java -jar ask.jar "'+id+'" "'+req.query.question+'" "'+type+'"', 
 		{
 			encoding: 'utf8',
 			timeout: 30000,
@@ -151,7 +151,7 @@ router.get("/ask_p", function(req, res, next) {
 	console.log(req.query.question);
 	console.log("Processing...");
 	var tmp_file = '../tmp/'+id+'.asw';
-	var child = exec('java -jar ask_zyf.jar "'+id+'" "'+req.query.question+'" "'+type+'"', 
+	var child = exec('java -jar ask.jar "'+id+'" "'+req.query.question+'" "'+type+'"', 
 		{
 			encoding: 'utf8',
 			timeout: 30000,
@@ -238,7 +238,7 @@ router.get("/ask_pz", function(req, res, next) {
 	console.log(req.query.question);
 	console.log("Processing...");
 	var tmp_file = '../tmp/'+id+'.asw';
-	var child = exec('java -jar ask_zyf.jar "'+id+'" "'+req.query.question+'" "'+type+'"', 
+	var child = exec('java -jar ask.jar "'+id+'" "'+req.query.question+'" "'+type+'"', 
 		{
 			encoding: 'utf8',
 			timeout: 30000,
