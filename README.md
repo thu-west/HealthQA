@@ -45,11 +45,11 @@ make
 　　更改conf文件目录下的healthqa.properties，配置数据库相关信息<br>
 - 6.运行以下命令生成healthqa数据库中的问答对
 ```Bash
-java -c ask_preprocess.java
+java -c ask_preprocess.jar
 ```
 - 7.运行以下命令生成索引文件
 ```Bash
-java -c ask_index.java
+java -c ask_index.jar
 ```
 - 8.程序运行入口:src.application.qav2.Ask.java
 - 9.在项目目录/HealthQA/web目录下输入命令
