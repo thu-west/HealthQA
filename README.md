@@ -63,6 +63,10 @@ npm start
 
 
 If you want to refer to our work, please cite our paper as:
+
+<p><i>Yanshen Yin, Yong Zhang, Xiao Liu, Yan Zhang, Chunxiao Xing, Hsinchun Chen: HealthQA: A Chinese QA Summary System for Smart Health. ICSH 2014: 51-62</i></p>
+
+or
 ```
 @inproceedings{DBLP:conf/icsh/YinZLZXC14,
   author    = {Yanshen Yin and
