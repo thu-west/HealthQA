@@ -58,4 +58,30 @@ npm start
 ```
 - 10.在浏览器访问 http://localhost:3000 即可显示健康问答系统
 
+## Citation
+--------
+
+
+If you want to refer to our work, please cite our paper as:
+```
+@inproceedings{DBLP:conf/icsh/YinZLZXC14,
+  author    = {Yanshen Yin and
+               Yong Zhang and
+               Xiao Liu and
+               Yan Zhang and
+               Chunxiao Xing and
+               Hsinchun Chen},
+  title     = {HealthQA: {A} Chinese {QA} Summary System for Smart Health},
+  booktitle = {Smart Health - International Conference, {ICSH} 2014, Beijing, China,
+               July 10-11, 2014. Proceedings},
+  pages     = {51--62},
+  year      = {2014},
+  crossref  = {DBLP:conf/icsh/2014},
+  url       = {https://doi.org/10.1007/978-3-319-08416-9\_6},
+  doi       = {10.1007/978-3-319-08416-9\_6},
+  timestamp = {Tue, 14 May 2019 10:00:46 +0200},
+  biburl    = {https://dblp.org/rec/conf/icsh/YinZLZXC14.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+```
 
