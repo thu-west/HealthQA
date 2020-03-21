@@ -12,7 +12,7 @@
     "express": "~4.12.2",
     "fs-extra": "^0.18.0",
     "jade": "~1.9.2",
-    "morgan": "~1.5.1",
+    "morgan": "~1.10.0",
     "node-uuid": "^1.4.3",
     "serve-favicon": "~2.2.0",
     
