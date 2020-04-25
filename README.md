@@ -1,11 +1,20 @@
 专病QA系统
 =========
-## 运行环境<br>
+
+****
+## 目录
+* [运行环境](#运行环境)
+* [目录说明](#目录说明)
+* [在Linux上部署](#在Linux上部署)
+* [Citation](#Citation)
+* [联系方式](#联系方式)
+
+## 运行环境
 * jdk 1.8.0_221
 * Eclipse 4.7
 * node v6.17.1
 
-## 目录说明<br>
+## 目录说明
 - ./bin<br>
 	　　存储生成的class文件
 
@@ -28,7 +37,7 @@
 	　　存储其他杂物<br>
 * 目录详细说明见Healthqa/doc/QA安装开发文档
 
-## Linux端部署
+## 在Linux上部署
 
 - 1.首先将根目录下的所有文件拷贝至服务器。
 - 2.安装jdk
@@ -60,8 +69,6 @@ npm start
 
 ## Citation
 --------
-
-
 If you want to refer to our work, please cite our paper as:
 
 <p><i>Yanshen Yin, Yong Zhang, Xiao Liu, Yan Zhang, Chunxiao Xing, Hsinchun Chen: HealthQA: A Chinese QA Summary System for Smart Health. ICSH 2014: 51-62</i></p>
@@ -88,5 +95,5 @@ or
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 ```
-## 联系方式<br>
-shengming@tsinghua.edu
+## 联系方式
+问题和建议，请发邮件至：shengming@tsinghua.edu
