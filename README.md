@@ -13,7 +13,7 @@
 ## 运行环境
 * JDK 1.8.0_221
 * Eclipse 4.7
-* Node v6.17.1
+* Nodejs v6.17.1
 
 ## 目录说明
 - ./bin<br>
@@ -41,8 +41,8 @@
 ## 在Linux上部署
 
 - 1.首先将根目录下的所有文件拷贝至服务器。
-- 2.安装jdk
-- 3.安装nodejs(注意版本匹配)
+- 2.安装JDK
+- 3.安装Nodejs(注意版本匹配)
 - 4.进入./lib,运行命令<br>
 ```Bash
 tar -xzvf CRF++-0.58.tar.gz
