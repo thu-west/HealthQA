@@ -8,6 +8,7 @@
 * [目录说明](#目录说明)
 * [在Linux上部署](#在Linux上部署)
 * [Citation](#Citation)
+* [常见问题](#常见问题)
 * [联系方式](#联系方式)
 
 ## 运行环境
@@ -96,5 +97,10 @@ or
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 ```
+
+## 常见问题
+* 问题1
+* 问题2
+
 ## 联系方式
 问题和建议，请发邮件至：shengming@tsinghua.edu
