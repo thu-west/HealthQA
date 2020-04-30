@@ -13,7 +13,7 @@
 * [联系方式](#联系方式)
 
 ## 运行环境
-* 系统演示：<a href="https://cloud.tsinghua.edu.cn/f/238802822ce446beba79/">观看</a>
+* 系统演示（2020-01-01录制）：<a href="https://cloud.tsinghua.edu.cn/f/238802822ce446beba79/">观看</a>
 
 ## 运行环境
 * JDK 1.8.0_221
